@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+
+@theme {
+  --color-brand-black: #0a0a0a;
+  --color-brand-dark: #111111;
+  --color-brand-card: #161616;
+  --color-brand-border: #262422;
+  --color-brand-border-light: #3a3630;
+  --color-brand-gold: #c5a059;
+  --color-brand-gold-hover: #d8b26a;
+  --color-brand-gold-light: #e4cd9f;
+  --color-brand-ivory: #f5f2eb;
+  --color-brand-muted: #9a9489;
+  --color-brand-muted-dark: #666158;
+
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+@utility font-luxury {
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: -0.015em;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0b0b0b] font-sans text-brand-ivory antialiased selection:bg-brand-gold selection:text-brand-black;
+  }
+}
