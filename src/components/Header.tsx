@@ -1,5 +1,4 @@
-import { navLinks, WHATSAPP_URL } from '../data'
-import { WhatsAppIcon } from './Icons'
+import { navLinks } from '../data'
 
 export default function Header() {
   return (
@@ -23,15 +22,6 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center space-x-6">
-          <a
-            className="hidden items-center gap-2 text-[12px] tracking-wider text-[#a8a194] uppercase transition-colors hover:text-brand-gold lg:flex"
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <WhatsAppIcon className="h-4 w-4 fill-current text-emerald-500" />
-            VIP Desk
-          </a>
           <a
             className="flex items-center gap-1.5 rounded-sm bg-brand-gold px-5 py-2.5 text-[12px] font-semibold tracking-wider text-brand-black uppercase shadow-md transition-all duration-300 hover:bg-brand-gold-hover"
             href="#orcamento"
